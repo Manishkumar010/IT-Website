@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.hometoppage {
+    width: 100%;
+    height: 140vh;
+    background-image: url(../images/firstimg.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+}
+
+.hometoppage.removeBG {
+    width: 100%;
+    height: 20vh;
+    background-image: none;
+    background-color: #25272D;
+}
+
+.hometoppage header {
+    height: 16vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.hometoppage header>div img {
+    width: 120px;
+    /* height: 60px; */
+}
+
+.hometoppage header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.hometoppage header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.hometoppage header div p {
+    text-align: center;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.hometoppage header>div span {
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #fff;
+}
+
+.hometoppage .centerDiv {
+    width: 60%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 1em 4em;
+    margin-left: 35vw;
+    margin-top: 5em;
+}
+
+.hometoppage .centerDiv>span {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 550;
+    text-transform: uppercase;
+    word-spacing: 5px;
+}
+
+.hometoppage .centerDiv>h1 {
+    color: #fff;
+    font-size: 5em;
+    font-weight: 550;
+    line-height: 100px;
+    font-family: "Roboto", sans-serif;
+}
+
+.hometoppage .centerDiv>p {
+    color: #fff;
+    line-height: 30px;
+}
+
+.hometoppage .centerDiv>div {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.hometoppage .centerDiv>div span {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.784);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-top: -0.2em;
+}
+
+.hometoppage .centerDiv>div div h3 {
+    color: #fff;
+    font-size: 1.4em;
+}
+
+.hometoppage .centerDiv>div div h4 {
+    color: #fff;
+    font-size: 3.4em;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+main .listContainer {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+
+main .listContainer .leftPage {
+    background-color: #F7F7F8;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding: 1em 2em;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    /* align-items:center ; */
+}
+
+main .listContainer .rightPage {
+    background-color: #F2382C;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding: 1em 2em;
+    flex-direction: column;
+    gap: 2em;
+}
+
+main .listContainer .leftPage h2 {
+    width: 90%;
+    font-size: 3em;
+    font-size: 500;
+    line-height: 60px;
+    color: #000000d4;
+    font-family: "Roboto", sans-serif;
+}
+
+main .listContainer .leftPage p {
+    width: 80%;
+    color: gray;
+    line-height: 28px;
+    font-family: "Roboto", sans-serif;
+}
+
+main .listContainer .rightPage>p {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8em;
+    font-weight: 500;
+    word-spacing: 5px;
+    margin-top: 5em;
+    margin-left: 6em;
+}
+
+main .listContainer .rightPage .countContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main .listContainer .rightPage .countContainer .countBox {
+    width: 200px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 2em;
+    margin-left: 1.5em;
+}
+
+main .listContainer .rightPage .countContainer .countBox h5 {
+    font-size: 4.5em;
+    font-weight: 500;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    line-height: 10px;
+}
+
+main .listContainer .rightPage .countContainer .countBox p {
+    color: #fff;
+    line-height: 70px;
+    word-spacing: 4px;
+}
+
+main .listContainer .rightPage .countContainer .countBox span {
+    font-weight: 800;
+}
+
+/* From  cssbuttons-io */
+.fancy {
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 1em 1.8em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 13px;
+}
+
+.fancy::before {
+    content: " ";
+    width: 1.5625rem;
+    height: 2px;
+    background: black;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+    -webkit-transition: background 0.3s linear, width 0.3s linear;
+    -moz-transition: background 0.3s linear, width 0.3s linear;
+    -ms-transition: background 0.3s linear, width 0.3s linear;
+    -o-transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.fancy .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+    -webkit-transition: width 0.5s ease-out, left 0.3s ease-out;
+    -moz-transition: width 0.5s ease-out, left 0.3s ease-out;
+    -ms-transition: width 0.5s ease-out, left 0.3s ease-out;
+    -o-transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+    -webkit-transition: width 0.5s ease-out, right 0.3s ease-out;
+    -moz-transition: width 0.5s ease-out, right 0.3s ease-out;
+    -ms-transition: width 0.5s ease-out, right 0.3s ease-out;
+    -o-transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+    -webkit-transition: width 0.5s ease-out, right 0.3s ease-out;
+    -moz-transition: width 0.5s ease-out, right 0.3s ease-out;
+    -ms-transition: width 0.5s ease-out, right 0.3s ease-out;
+    -o-transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+    color: white;
+    background: black;
+}
+
+.fancy:hover::before {
+    width: 0.9375rem;
+    background: white;
+}
+
+.fancy:hover .text {
+    color: white;
+    padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+    left: -2px;
+    width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+.fancy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+}
+
+.headingBox {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.headingBox h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 3em;
+    font-weight: 500;
+    color: #000000cd;
+    line-height: 70px;
+}
+
+.headingBox p {
+    width: 60%;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(94, 94, 94);
+    font-size: 0.9em;
+    font-family: "Roboto", sans-serif;
+}
+
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2em;
+}
+
+.supportContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.supportContainer .contentBox {
+    width: 100%;
+    height: 36vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.supportContainer .contentBox p {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.707);
+    word-spacing: 2px;
+    font-size: 1.1em;
+}
+
+.supportContainer .contentBox h4 {
+    font-family: "Roboto", sans-serif;
+    color: rgba(0, 0, 0, 0.848);
+    word-spacing: 2px;
+    font-size: 2.5em;
+}
+
+.cardEffectbox {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5em;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 2em;
+    background-color: #212121;
+}
+
+/* card effect  */
+.card {
+    width: 320px;
+    height: 300px;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(#212121, #212121) padding-box,
+        linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transform-origin: right bottom;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card .main-content {
+    flex: 1;
+}
+
+
+.card .main-content .header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.card .header span:first-child {
+    font-weight: 600;
+    color: #717171;
+    margin-right: 4px;
+}
+
+.card .heading {
+    font-size: 24px;
+    margin: 24px 0 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.card .categories {
+    display: flex;
+    gap: 8px;
+}
+
+.card:hover {
+    rotate: 8deg;
+}
+@media only screen and (max-width:766px){
+    .hometoppage header{
+        display: none
+        ;
+    }
+}

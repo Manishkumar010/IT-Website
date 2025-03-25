@@ -1,0 +1,351 @@
+  
+  .about-container {
+    width: 100%;
+    height: 50%;
+    background-color: #25272d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-container h1 {
+    font-size: 5em;
+    font-weight: 550;
+    color: #fff;
+  }
+  
+  .about-container span {
+    width: 40px;
+    display: inline-block;
+    border-bottom: 2px solid #ff0000;
+    margin-top: 2.6em;
+  }
+  
+  /* section box */
+  
+  .sec-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 600px;
+    margin: 4em 8em;
+  }
+  
+  .sec-box .left {
+    width: 40%;
+  }
+  
+  .sec-box .left img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  .sec-box .right {
+    width: 45%;
+    text-align: left;
+  }
+  
+  .sec-box .right h1 {
+    font-size: 3em;
+    font-weight: 500;
+  }
+  
+  .sec-box .right p {
+    width: 100%;
+    /* margin: auto; */
+    color: gray;
+    font-size: 1em;
+    line-height: 1.6em;
+    padding-top: 2em;
+  }
+  
+  .sec-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 4em 8em;
+  }
+  
+  .sec-item .box {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 1em;
+    padding: 2em 1em;
+  }
+  
+  .box p {
+    font-size: 0.9em;
+    font-weight: 500;
+    /* line-height: 1.8em; */
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .line {
+    width: 80%;
+    margin: auto;
+    height: 50px;
+    color: rgb(100, 99, 99);
+  }
+  
+  .heading {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .heading h1 {
+    margin: auto;
+    font-size: 2.6em;
+  font-weight: 400;
+  }
+  
+  /* testmonial */
+  
+  .testmonial {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+  }
+  
+  .testmonia-inner {
+    width: 30%;
+    height: 300px;
+  }
+  
+  .testmonia-inner p {
+    width: 100%;
+    font-size: 1em;
+    color: gray;
+  
+    line-height: 1.8em;
+    text-align: center;
+    padding-top: 2em 1em;
+  }
+  
+  .testmonial .img-text img {
+    border-radius: 50%;
+  }
+  
+  .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1em;
+  }
+  
+  .img-text img {
+    border-radius: 50%;
+  }
+  
+  .images h5 {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    padding-left: 1em;
+  }
+  .images p {
+    width: 100%;
+    font-size: 0.8em;
+    padding-left: 1em;
+  }
+  
+  /* responsive */
+  
+  /* mobile device */
+  
+  @media screen and (max-width: 766px) 
+  {
+    body {
+      overflow-x: hidden;
+    }
+  
+    .about-container {
+    width: 100%;
+    height: 15vh;
+    }
+  
+    .about-container h1 {
+      font-size: 3em;
+    }
+  
+    .about-container span {
+      margin-top: 1em;
+    }
+  
+    .heading h1 {
+      font-size: 2em;
+      width: 90%;
+  }
+  
+    .sec-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      object-fit: cover;
+      margin: 0;
+      height: auto;
+    }
+  
+    .sec-box .left,
+    .right {
+      width: 100%;
+      height: auto;
+    }
+  
+    .sec-box .right{
+      width: 100%;
+    }
+  
+    .sec-box .right h1 {
+      font-size: 2.5em;
+      font-weight: 500;
+      text-align: center;
+      padding: 0.5em;
+  }
+  
+  .sec-box .right p {
+      width: 100%;
+      height: auto;
+      font-size: 1em;
+      line-height: 1.6em;
+      text-align: justify;
+      padding: 0 2em;}
+  
+    .sec-item{
+      flex-direction: column;
+      margin: 0;
+      width: 100%;
+    
+  }
+  .sec-item {
+      flex-direction: column;
+      margin: 0;
+      width: 100%;
+      height: auto;
+      justify-content: center;
+  }
+  .sec-item .box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: flex-start;
+      gap: 1em;
+      padding:1em;
+  }
+  
+  .line{
+      display: none;
+  }
+  
+  .heading {
+      width: 100%;
+  }
+  
+  .testmonial {
+      width: 100%;
+      margin: auto;
+      display: flex
+  ;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 1em;
+  }
+  .testmonia-inner {
+      width: 90%;
+      height: auto;
+  }
+  
+  .testmonia-inner p{
+      text-align: justify;
+  }
+  }
+  
+  
+  /* tab device */
+  
+  @media screen and (min-width:767px) and (max-width:1039px) 
+  {
+      .about-container {
+       height: 25vh;
+      }
+  
+      .sec-box {
+          flex-direction: column;
+          width: 100%;
+          height: auto;
+          margin: 0;
+      }
+      .sec-box .left {
+          width: 100%;
+      }
+      .sec-box .left img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          object-position: center;
+      }
+      
+      .sec-box .right {
+          width: 100%;
+          margin-top: 1em;
+          }
+  
+          .sec-box .right h1 {
+              font-size: 2.6em;
+              padding: 0 1em;
+          }
+  
+          .sec-box .right p {
+              padding: 1.6em;
+          }
+  
+          .sec-item {
+              width: 100%;
+              margin: auto;
+          }
+  
+          .sec-item .box {
+              width: 33%;
+          }
+  
+              .line{
+                  display: none;
+              }
+  
+              .heading {
+                  width: 100%;
+                  margin: auto;}
+              
+        .heading h1{
+          font-size: 2.6em;
+          padding: 0 1em;
+        }
+  
+        .testmonial {  
+          margin-top: 1em;
+          flex-direction: column;
+      }
+  
+      .testmonia-inner {
+          width: 88%;
+          height: auto;
+      }
+      
+  
+  }
