@@ -12,6 +12,7 @@ html {
     max-width: 1440px;
     margin: auto;
     overflow-x: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.108);
 }
 
 .hometoppage {
@@ -75,7 +76,7 @@ html {
     flex-direction: column;
     gap: 3em;
     padding: 1em 4em;
-    margin-left: 35vw;
+    margin-left: 36vw;
     margin-top: 5em;
 }
 
@@ -166,7 +167,7 @@ main .listContainer .rightPage {
 main .listContainer .leftPage h2 {
     width: 90%;
     font-size: 3em;
-    font-size: 500;
+    font-weight: 500;
     line-height: 60px;
     color: #000000d4;
     font-family: "Roboto", sans-serif;
@@ -219,7 +220,7 @@ main .listContainer .rightPage .countContainer .countBox h5 {
 
 main .listContainer .rightPage .countContainer .countBox p {
     color: #fff;
-    line-height: 70px;
+    line-height: 80px;
     word-spacing: 4px;
 }
 
@@ -480,9 +481,228 @@ main .listContainer .rightPage .countContainer .countBox span {
 .card:hover {
     rotate: 8deg;
 }
-@media only screen and (max-width:766px){
-    .hometoppage header{
-        display: none
-        ;
+
+.closeNav,
+.openNav {
+    display: none;
+}
+
+.mobileheader {
+    display: none;
+}
+
+@media only screen and (max-width:766px) {
+    .hometoppage header>div:nth-child(2) {
+        display: none;
+    }
+
+    .hometoppage header>div:nth-child(3) {
+        display: none;
+    }
+
+    .hometoppage header nav {
+        display: none;
+    }
+
+    .cardeffectbox {
+        padding-top: 2em !important;
+    }
+
+    .openNav {
+        display: block;
+    }
+
+    .closeNav {
+        display: block;
+        position: absolute;
+        top: 3%;
+        right: 5%;
+    }
+
+    .mobileheader {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        padding: 2em;
+        top: 0;
+        right: -1000px;
+        width: 80%;
+        height: 100dvh;
+        background-color: black;
+        z-index: 999;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+    }
+
+    .mobileheader.activeNav {
+        right: 0;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+    }
+
+    .mobileheader div {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+        text-align: center;
+    }
+
+    .mobileheader div a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.4em;
+    }
+
+    .hometoppage {
+        height: auto;
+    }
+
+    .hometoppage .centerDiv {
+        width: 100%;
+        height: 80vh;
+        gap: 1em;
+        padding: 1em 2em;
+        margin-left: 0vw;
+        margin-top: 0em;
+        justify-content: center;
+    }
+
+    .hometoppage .centerDiv>div div h3 {
+        font-size: 1em;
+    }
+
+    .hometoppage .centerDiv>div div h4 {
+        color: #fff;
+        font-size: 2em;
+    }
+
+    .hometoppage .centerDiv>div {
+        margin-top: 2em;
+    }
+
+    .hometoppage .centerDiv>h1 {
+        font-size: 3em;
+        line-height: 70px;
+    }
+
+    main .listContainer {
+        height: auto;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    main .listContainer .leftPage {
+        width: 100%;
+        align-items: center;
+    }
+
+    main .listContainer .rightPage {
+        width: 100%;
+    }
+
+    main .listContainer .leftPage h2 {
+        width: 100%;
+        font-size: 2em;
+        line-height: 42px;
+        text-align: center;
+    }
+
+    main .listContainer .leftPage p {
+        width: 100%;
+        text-align: justify;
+    }
+
+    main .listContainer .rightPage .countContainer .countBox p {
+        line-height: 96px;
+    }
+
+    .headingBox p {
+        width: 90%;
+    }
+
+    .buttonContainer {
+        margin-top: 0;
+    }
+
+    .supportContainer .contentBox {
+        height: 15vh;
+    }
+
+    .headingBox {
+        height: 25vh;
+    }
+
+    main .listContainer .rightPage>p {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+    .hometoppage header {
+        display: flex;
+        justify-content: space-between;
+        padding: 2em;
+        height: 12vh;
+    }
+
+    .hometoppage header>div img {
+        width: 120px;
+        height: 60px;
+    }
+
+    .hometoppage header>div span {
+        font-size: 1em;
+        font-weight: 800;
+        color: #fff;
+    }
+
+    .hometoppage header div p {
+        font-size: 0.7em;
+        margin-top: 1.5em;
+    }
+
+    .hometoppage .centerDiv {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        padding: 1em 4em;
+        margin-left: 0vw;
+        margin-top: 5em;
+        justify-content: center;
+    }
+    .hometoppage {
+        width: 100%;
+        height: auto;
+        background-position: inherit;
+        background-size: cover;
+        font-family: "Roboto", sans-serif;
+    }
+    main .listContainer{
+        height: 80vh;
+        margin-bottom: 0;
+    }
+    main .listContainer .leftPage p{
+        width: 100%;
+        text-align: justify;
+    }
+    main .listContainer .leftPage h2{
+        width: 100%;
+        font-size: 2em;
+    }
+    .headingBox{
+        height: 30vh;
+    }
+    .supportContainer .contentBox{
+        height: 12vh;
     }
 }

@@ -1,7 +1,5 @@
-
-
 .footer {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.768);
     padding: 20px 0;
     text-align: center;
 }
@@ -11,14 +9,20 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    height: 16vh;
+    height: 10vh;
 
     justify-content: space-between;
 }
 
+.container>a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .logo {
-    height: 30px;
-    width: auto;
+    /* height: 40px; */
+    width: 140px;
+    object-fit: cover;
 }
 
 .footer-links {
@@ -44,4 +48,25 @@
     margin-top: 15px;
     color: #fff;
     font-size: 14px;
+}
+
+@media only screen and (max-width:766px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        height: 14vh;
+        gap: 0.4em;
+    }
+
+    .footer-links {
+        margin-top: 0px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+    .container {
+        justify-content: center;
+        gap: 1.5em;
+    }
 }

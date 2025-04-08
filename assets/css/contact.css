@@ -1,12 +1,13 @@
 .contact-container {
     width: 100%;
-    background-color: #25272d;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4em 0;
     color: #fff;
+    padding: 4em 0;
+    background-color: #000;
 }
+
 
 
 .contact-left {
@@ -31,26 +32,28 @@
 }
 
 .contact-left h3 {
-    width: 100%;
+    width: 66%;
     font-size: 2em;
     font-weight: 500;
     font-family: 'Heebo', sans-serif;
     line-height: 1.2em;
     padding: 1em 0;
+    text-align: justify;
 }
 
 .contact-left .p1 {
-    width: 80%;
+    width: 66%;
     font-size: 1.4em;
     margin-bottom: 1em;
-
+    text-align: justify;
 }
 
 .contact-left .p2 {
-    width: 80%;
+    width: 66%;
     font-size: 1em;
     line-height: 1.6em;
 }
+
 
 .left-img h3 {
     font-size: 0.9em;
@@ -90,7 +93,7 @@
 }
 
 .contact-right label {
-    color: #fff;
+    color: gray;
     font-size: 1.2em;
     gap: 1em;
 }
@@ -165,4 +168,210 @@
     width: 90%;
     margin: auto;
     height: 80vh;
+}
+
+
+/* responsive */
+
+/* mobile device */
+
+@media screen and (max-width: 766px) {
+
+    .contact-container {
+        width: 100%;
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    .contact-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-left h1 {
+        font-size: 4em;
+        font-weight: 400;
+        text-align: center;
+        width: 100%;
+        line-height: 1.4em;
+    }
+
+    .contact-left h3 {
+        width: 100%;
+        font-size: 1.2em;
+        width: 100%;
+        font-weight: 300;
+        line-height: 1.2em;
+        padding: 1em 0;
+    }
+
+    .contact-left .p1 {
+        width: 100%;
+        font-size: 1em;
+        padding: 1em 0;
+        line-height: 1.6em;
+    }
+
+    .contact-left .p2 {
+        width: 100%;
+        font-size: 1em;
+        line-height: 1.6em;
+        padding: 1em 0;
+    }
+
+    .left-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1em;
+    }
+
+    .contact-right textarea {
+        width: 80%;
+        font-size: 1.2em;
+        margin-right: 100px;
+        padding: 1em 0;
+        text-align: center;
+        margin: auto;
+    }
+
+    .content-container-map {
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        padding: 1em;
+    }
+
+    .box1 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .inner-box {
+        width: 100%;
+        margin: auto;
+        padding: 1em;
+    }
+
+
+}
+
+@media screen and (min-width: 766px) and (max-width:1039px) {
+    .contact-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .contact-left {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-left h3 {
+        width: 80%;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .contact-left .p1 {
+        width: 77%;
+        font-size: 1.6em;
+        text-align: justify;
+        padding: 1em 0;
+
+
+    }
+
+    .contact-left .p2 {
+        width: 72%;
+        text-align: justify;
+        font-size: 1.4em;
+        line-height: 1.6em;
+        padding: 1em 0;
+    }
+
+    .left-img {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-img h3 {
+        padding-top: 2em;
+    }
+
+    .contact-right {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2em;
+    }
+
+    .contact-right label {
+        font-size: 1.6em;
+    }
+
+    .contact-right textarea {
+        width: 80%;
+        margin: auto;
+        font-size: 2em;
+    }
+
+    .content-container-map {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .box1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .box1 .inner-box {
+        width: 100%;
+        margin: auto;
+        margin-left: 4em;
+        padding-top: 2em;
+    }
+
+    .inner-box h4 {
+        font-size: 1.4em;
+    }
+
+    .inner-box p {
+        font-size: 1.2em;
+    }
+
+    .box2 {
+        padding: 2em 0;
+        width: 90%;
+        margin: auto;
+        height: 50vh;
+    }
+
 }

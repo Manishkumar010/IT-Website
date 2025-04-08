@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>IT Website</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/services.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
@@ -24,12 +24,34 @@
                 <a href="./services.html">Services</a>
                 <a href="./about.html">About</a>
                 <a href="./contact.html">Contact</a>
-
             </nav>
             <div>
                 <p>Have any questions?</p>
                 <span>+1 123-456-7890</span>
             </div>
+            <div class="mobileheader">
+                <div>
+                    <a href="/index.html">Home</a>
+                    <a href="./services.html">Services</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                    <span class="closeNav"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32"
+                            height="32" fill="rgba(255,255,255,1)">
+                            <path
+                                d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z">
+                            </path>
+                        </svg></span>
+                </div>
+
+                <div>
+                    <p>Have any questions?</p>
+                    <span>+1 123-456-7890</span>
+                </div>
+            </div>
+            <span class="openNav"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                    fill="rgba(255,255,255,1)">
+                    <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+                </svg></span>
         </header>
 
         <div class="centerDiv">
@@ -71,19 +93,19 @@
                 <p>LET'S NUMBER TALK</p>
                 <div class="countContainer">
                     <div class="countBox">
-                        <h5><span>15</span>+</h5>
+                        <h5><span id="counter">0</span>+</h5>
                         <p>Years in Business</p>
                     </div>
                     <div class="countBox">
-                        <h5><span>500</span>+</h5>
+                        <h5><span id="counter2">0</span>+</h5>
                         <p>Happy Customers</p>
                     </div>
                     <div class="countBox">
-                        <h5><span>128</span></h5>
+                        <h5><span id="counter3">0</span></h5>
                         <p>Licensed Officer</p>
                     </div>
                     <div class="countBox">
-                        <h5><span>2</span>K+</h5>
+                        <h5><span id="counter4">0</span>K+</h5>
                         <p>Assets Protected</p>
                     </div>
                 </div>
@@ -313,7 +335,10 @@
     <footer class="footer">
         <div class="container">
             <a href="#">
-                <img class="logo" src="https://merakiui.com/images/full-logo.svg" alt="Logo">
+                <img class="logo"
+                    src="https://ilakkiasabap.wordpress.com/wp-content/uploads/2018/05/bsbr1t9a0resdcqo.png?w=621&h=221"
+                    alt="Logo">
+                <!-- <span>Logo Here</span> -->
             </a>
 
             <div class="footer-links">
@@ -329,6 +354,7 @@
         </div>
     </footer>
 
+    <script src="./assets/script.js"></script>
 </body>
 
 </html>
